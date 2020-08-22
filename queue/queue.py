@@ -9,6 +9,7 @@ return elements in First In First Out order.
    Make sure the Queue tests pass.
 3. What is the difference between using an array vs. a linked list when 
    implementing a Queue?
+   "Same thing as stack except you're just adding to the head and removing from the tail
    
 Stretch: What if you could only use instances of your Stack class to implement the Queue?
          What would that look like? How many Stacks would you need? Try it!
@@ -23,7 +24,7 @@ from singly_linked_list import LinkedList
 #and then just imported the module using its local copy vervsion
 from copiedSinglyLinked import LinkedList 
 
-print(LinkedList())
+#print(LinkedList())
 
 
 class Queue:
