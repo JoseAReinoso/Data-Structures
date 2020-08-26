@@ -6,7 +6,7 @@ class ListNode:
         self.prev = prev
         self.next = next
 
- #adding a delete func
+ #adding a delete method to apply DRY principle when needing to delete
     def delete(self):
         if self.prev:
             self.prev.next = self.next
@@ -30,11 +30,13 @@ class DoublyLinkedList:
     the old head node's previous pointer accordingly."""
     def add_to_head(self, value):
         new_node = ListNode(value, None, None)
+        print(new_node.value,"- getting a view of the values")
         self.length += 1
         # If list is empty
         if not self.head and not self.tail:
           self.head = new_node
           self.tail = new_node
+          
         else:
           new_node.next = self.head
           self.head.prev = new_node
