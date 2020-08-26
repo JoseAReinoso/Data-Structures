@@ -9,8 +9,6 @@ class LinkedList:
         self.length = 0
     def __str__(self):
         pass
-
-    
     def add_to_tail(self, value):
         # Check if there's a tail
         # If there is no tail (empty list)
